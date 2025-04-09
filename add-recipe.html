@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Recipe</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="add-recipe.html">Add Recipe</a> |
+    <a href="recipe-list.html">Recipe List</a>
+  </nav>
+  <main>
+  <h1>Add Your Recipe</h1>
+ <section>
+  <form action="#" method="post" id="recipe-form">
+
+    <!-- Recipe Name -->
+    <div>
+      <label for="recipe-name">Recipe Name:</label><br>
+      <input type="text" id="recipe-name" name="recipe-name"  placeholder=Beefmeat,pizza..... required> 
+    </div><br>
+  <br>
+</section>
+    <!-- Ingredients -->
+  <section>
+    <div>
+      <label for="ingredients">Ingredients:</label><br>
+      <textarea id="ingredients" name="ingredients" placeholder="meat,egg,floor...." required></textarea>
+    </div><br>
+    <br>
+  </section>
+    <!-- Cooking Instructions -->
+  <section>
+    <div>
+      <label for="instructions">Cooking Instructions:</label><br>
+      <textarea id="instructions" name="instructions"  placeholder="First make light your stove." required></textarea>
+    </div><br>
+    <br>
+  </section>
+    <!-- Image URL -->
+  <section>
+    <div>
+      <label for="image-url">Image URL:</label><br>
+      <input type="url" id="image-url" name="image-url">
+    </div><br>
+    <br> 
+  </section>
+    <!-- Recipe Category -->
+  <section>
+    <div>
+      <label for="category">Recipe Category:</label><br>
+      <select id="category" name="category" required>
+        <option value="desserts">Desserts</option>
+        <option value="vegan">Vegan</option>
+        <option value="quick-meals">Quick Meals</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="healthy">Healthy</option>
+      </select>
+    </section>
+    </div><br>
+    </main>
+    <!-- Submit Button -->
+    <div>
+      <button type="submit">Add Recipe</button>
+    </div>
+
+  </form>
+
+</main>
+</body>
+</html>
